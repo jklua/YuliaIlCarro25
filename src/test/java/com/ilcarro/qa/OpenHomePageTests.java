@@ -1,5 +1,6 @@
 package com.ilcarro.qa;
 
+import com.google.common.io.ByteProcessor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,27 +11,15 @@ import org.testng.annotations.Test;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-public class OpenHomePageTests extends TestBase{
+public class OpenHomePageTests extends TestBase {
 
     @Test
     public void homePageTest(){
         System.out.println("site opened");
 
-        //wd.findElement(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
+       // wd.findElement(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
         System.out.println("FindCarForm : " + isFindCarFormPresent());
         isFindCarFormPresent2();
-
     }
-
-
-//    public boolean isFindCarFormPresent2(By by) {
-//        try {
-//            wd.findElement(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
-//            return true;
-//        } catch (NoSuchElementException ex) {
-//            return false;
-//        }
-    }
-
 
 }
