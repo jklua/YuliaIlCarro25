@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class CreateAccountTests extends TestBase{
 //preconditions:user should be logged out
     WebDriver wd;
-    
+
     @BeforeMethod
     public void ensurePreconditions(){
         if(!isElementPresent(By.cssSelector("[href='/signup']"))){//sign up not present
