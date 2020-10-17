@@ -1,12 +1,15 @@
 package com.ilcarro.qa;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase{
 //preconditions:user should be logged out
+    WebDriver wd;
+    
     @BeforeMethod
     public void ensurePreconditions(){
         if(!isElementPresent(By.cssSelector("[href='/signup']"))){//sign up not present
